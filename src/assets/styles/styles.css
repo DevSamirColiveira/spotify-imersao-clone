@@ -1,5 +1,6 @@
 body {
   background-color: #000;
+  background-color: bisque;
   color: #FFFFFF;
 }
 
@@ -17,6 +18,7 @@ body {
   background-color: #121212;
   border-radius: 0.5rem;
   padding: 1rem 0 0 1rem;
+  gap: 50px;
 }
 
 .sidebar__navigation .logo__pl {
@@ -25,6 +27,7 @@ body {
   border-radius: 0.5rem;
   padding: 1rem 0 0 1rem;
 }
+
 .sidebar__navigation .logo__pl img {
   width: 5rem;
 }
@@ -34,19 +37,63 @@ body {
   padding: 0 1.25rem 0.625rem 1.25rem;
 }
 
-.lista__nav  li {
+.lista__nav li {
   padding: 0.625rem 0;
 }
 
-.lista__nav  li a {
+.lista__nav li a {
+  display: flex;
   color: #b3b3b3;
   text-decoration: none;
   /* list-style: none; */
   font-weight: 600;
   font-size: 0.875rem;
   font-family: "DM Sans" sans-serif;
+  gap: 20px;
+  align-items: center;
+
 }
+
 .lista__nav span svg {
   width: 24px;
   height: 24px;
 }
+
+.library span svg {
+  width: 24px;
+  height: 24px;
+}
+
+.library {
+  display: flex;
+  background-color: #121212;
+  border-radius: 8px;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 4px 8px;
+  color: #b3b3b3;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.library .library__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.library .library__button {
+  display: flex;
+  margin-right: 10px;
+  color: #b3b3b3;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "DM Sans" sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  padding: 20px 10px;
+}
+
